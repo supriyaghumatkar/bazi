@@ -1,0 +1,5 @@
+.login-page,
+.register-page {
+  background: #d2d6de;
+  background-image: url("../../../BackendImg/plot-bazi-chart-bg 2.png") !important;
+}

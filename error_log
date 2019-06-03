@@ -1,0 +1,33 @@
+[27-Mar-2019 08:56:31 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/views/personal_detail.php on line 107
+[27-Mar-2019 12:57:46 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/api/Chart.php on line 684
+[10-Apr-2019 10:03:48 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 140
+[10-Apr-2019 10:04:53 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 111
+[10-Apr-2019 10:07:47 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 111
+[10-Apr-2019 10:07:56 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 111
+[10-Apr-2019 10:09:01 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 111
+[10-Apr-2019 10:11:56 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 125
+[10-Apr-2019 10:13:54 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 122
+[10-Apr-2019 10:15:32 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 122
+[10-Apr-2019 10:16:10 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 122
+[10-Apr-2019 10:18:16 UTC] PHP Fatal error:  Call to undefined function random_string() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 114
+[15-Apr-2019 12:56:29 UTC] PHP Fatal error:  Call to undefined function random_int() in /home/demo33blink/public_html/fengshui/system/helpers/form_helper.php on line 1077
+[15-Apr-2019 12:57:29 UTC] PHP Fatal error:  Call to undefined function random_int() in /home/demo33blink/public_html/fengshui/system/helpers/form_helper.php on line 1077
+[15-Apr-2019 12:57:42 UTC] PHP Fatal error:  Call to undefined function getToken() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 84
+[15-Apr-2019 12:58:44 UTC] PHP Fatal error:  Call to undefined function getToken() in /home/demo33blink/public_html/fengshui/application/controllers/User.php on line 84
+[15-Apr-2019 12:58:47 UTC] PHP Fatal error:  Call to undefined function random_int() in /home/demo33blink/public_html/fengshui/system/helpers/form_helper.php on line 1077
+[15-Apr-2019 12:59:56 UTC] PHP Fatal error:  Call to undefined function random_int() in /home/demo33blink/public_html/fengshui/system/helpers/form_helper.php on line 1077
+[15-Apr-2019 13:00:00 UTC] PHP Fatal error:  Call to undefined function random_int() in /home/demo33blink/public_html/fengshui/system/helpers/form_helper.php on line 1078
+[22-Apr-2019 11:52:21 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/demo33blink/public_html/fengshui/application/views/chart_report.php on line 462
+[22-Apr-2019 11:53:03 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/demo33blink/public_html/fengshui/application/views/chart_report.php on line 462
+[23-Apr-2019 06:39:10 UTC] PHP Parse error:  syntax error, unexpected '100' (T_LNUMBER), expecting ',' or ';' in /home/demo33blink/public_html/fengshui/application/views/chart_report.php on line 365
+[24-Apr-2019 11:39:40 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/views/header.php on line 75
+[25-Apr-2019 08:44:10 UTC] PHP Parse error:  syntax error, unexpected 'smallon' (T_STRING), expecting ',' or ';' in /home/demo33blink/public_html/fengshui/application/views/chart_report.php on line 317
+[25-Apr-2019 14:13:02 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 1
+[25-Apr-2019 14:13:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 1
+[25-Apr-2019 14:13:21 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 1
+[25-Apr-2019 14:13:33 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 1
+[25-Apr-2019 14:14:30 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 1
+[25-Apr-2019 15:23:05 UTC] PHP Fatal error:  Call to undefined function redirct() in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 29
+[25-Apr-2019 15:24:01 UTC] PHP Fatal error:  Call to undefined function redirct() in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 29
+[26-Apr-2019 05:24:03 UTC] PHP Fatal error:  Call to undefined function redirct() in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 29
+[26-Apr-2019 05:24:11 UTC] PHP Fatal error:  Call to undefined function redirct() in /home/demo33blink/public_html/fengshui/application/controllers/Profile.php on line 29

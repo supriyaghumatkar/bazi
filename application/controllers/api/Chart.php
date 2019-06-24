@@ -1253,6 +1253,7 @@ class Chart extends REST_Controller {
         if ($year < 2000) {
             if ($gender == 'Female') {
                 $additionVar = +5;
+
             } else if ($gender == 'Male') {
                 $additionVar = -10;
             }
@@ -1261,6 +1262,7 @@ class Chart extends REST_Controller {
                 $additionVar = +6;
             } else if ($gender == 'Male') {
                 $additionVar = -9;
+               
             }
         }
 
@@ -1273,8 +1275,11 @@ class Chart extends REST_Controller {
         if (strlen($OutPut) == 1) {
             $additionFlag = 1;
             $OutPut = $OutPut + $additionVar;
+            if($OutPut==0)
+                {
+                    $OutPut=abs($additionVar);
+                }
         }
-
         //Please add twp value togather till it will become single value.
         while (strlen($OutPut) > 1) {
             $OutPut = array_sum(str_split($OutPut));
@@ -1284,6 +1289,11 @@ class Chart extends REST_Controller {
                 $additionVar;
 
                 $OutPut = $OutPut + $additionVar;
+                if($OutPut==0)
+                {
+                    $OutPut=abs($additionVar);
+                }
+
             }
         }
         if($OutPut==5 && $gender=='Female')

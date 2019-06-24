@@ -1,6 +1,7 @@
 <?php 
 $currentpage=$this->uri->uri_string();
 $currentfunction=$this->router->fetch_method();
+//log_message("error",$currentfunction);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,15 +30,14 @@ $currentfunction=$this->router->fetch_method();
                 
                   <link href="<?php echo get_assets_path(); ?>newcssjs/css/default.css" type="text/css" rel="stylesheet" />  
                   <link href="<?php echo get_assets_path(); ?>newcssjs/css/default-nik.css" type="text/css" rel="stylesheet" />          
-                <link href="<?php echo get_assets_path(); ?>newcssjs/css/login.css" type="text/css" rel="stylesheet" />
+                  <link href="<?php echo get_assets_path(); ?>newcssjs/css/login.css" type="text/css" rel="stylesheet" />
 <!--                  <link rel="stylesheet" href="<?php echo get_assets_path(); ?>newcssjs/css/style2.css" type="text/css" media="all" />  Style-CSS  -->
                   
 	</head>
  <body>
-
-     <?php //if($currentfunction!='fensui_chart_personal_detail'){ ?>
+     <?php if($currentfunction!='fensui_chart_personal_detail' && $currentpage!='report' ){ ?>
     <div class="fullscreen_bgmain"></div>
-     <?php //} ?>
+     <?php } ?>
         <div class="main-header clearfix" >	
             <nav class="navbar navbar-inverse pinkbg pos">
                 <div class="container-fluid">

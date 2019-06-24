@@ -61,12 +61,12 @@ extract($color_element);
                         $nbp_icon = explode(',', $noble_eartly_icon);
                         $nbp_text = explode(',', $noble_people);
                         ?>
-                        <tr><td>Noble People</td><td>: <img class="small-sign" src="<?php echo get_assets_path() . $nbp_icon['0']; ?>" alt="<?php echo $nbp_text[0]; ?>"/> <?php echo $nbp_text[0]; ?>, <img class="small-sign" src="<?php echo get_assets_path() . $nbp_icon['1']; ?>" alt="Ox"/><?php echo $nbp_text[1]; ?></td></tr>
+                        <tr><td>Noble People</td><td class="print-height">: <img class="small-sign" src="<?php echo get_assets_path() . $nbp_icon['0']; ?>" alt="<?php echo $nbp_text[0]; ?>"/> <?php echo $nbp_text[0]; ?>, <img class="small-sign" src="<?php echo get_assets_path() . $nbp_icon['1']; ?>" alt="Ox"/><?php echo $nbp_text[1]; ?></td></tr>
                         <tr><td>Intelligence</td><td>: <img class="small-sign" src="<?php echo get_assets_path() . $intelligenec_icon; ?>" alt="<?php echo $intelligenec; ?>"/> <?php echo $intelligenec; ?></td></tr>
                         <tr><td>Peach Blossom</td><td>: <img class="small-sign" src="<?php echo get_assets_path() . $peachblossom_icon; ?>" alt="<?php echo $peachblossom; ?>"/> <?php echo $peachblossom; ?></td></tr>
                         <tr><td>Sky Horse</td><td>: <img class="small-sign" src="<?php echo get_assets_path() . $sky_horse_icon; ?>" alt="<?php echo $sky_horse; ?>"/> <?php echo $sky_horse; ?></td></tr>
                         <tr><td>Solitary</td><td>: <img class="small-sign" src="<?php echo get_assets_path() . $solitary_icon; ?>" alt="<?php echo $solitary; ?>"/> <?php echo $solitary; ?></td></tr>
-<!--<tr><td>Life Palace</td><td></td><td>: <img class="small-sign" src="<?php echo get_assets_path(); ?>newcssjs/img/Dog.svg" alt="Dog"/> Yang Earth Dog</td></tr>
+                        <!--<tr><td>Life Palace</td><td></td><td>: <img class="small-sign" src="<?php echo get_assets_path(); ?>newcssjs/img/Dog.svg" alt="Dog"/> Yang Earth Dog</td></tr>
                         <tr><td>Conception Palace</td><td></td><td>: <img class="small-sign" src="<?php echo get_assets_path(); ?>newcssjs/img/Goat.svg" alt="Goat"/> Yin Water Goat</td></tr>-->
                     </table>
 					 <table width="100%" class="men-destiny">   
@@ -95,10 +95,7 @@ extract($color_element);
                         <tr><td>Liu Sha <span class="minitext">(Six Killing)</span></td><td>: <?php echo $unfavorable_directionval[0]['liu_sha']; ?></td></tr>
                         <tr><td>Wu Kwei <span class="minitext">(Five Ghost)</span></td><td>: <?php echo $unfavorable_directionval[0]['wu_kwei']; ?></td></tr>
                         <tr><td>Who Hai <span class="minitext">(Unlucky)</span></td><td>: <?php echo $unfavorable_directionval[0]['who_hai']; ?></td></tr>
-                    </table>
-  
-                             	
-                           	
+                    </table>           	         	
                 </div>
                 <div class="col-md-7 col-xs-7">
                 
@@ -726,11 +723,11 @@ extract($color_element);
     ?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
     <!-- <script src="<?php echo get_assets_path(); ?>newcssjs/js/loader.js"></script> -->
     
    <script type="text/javascript">

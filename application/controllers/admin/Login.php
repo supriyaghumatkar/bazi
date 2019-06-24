@@ -64,7 +64,8 @@ class Login extends CI_Controller {
                                     );   
                 		
                     $this->session->set_userdata($sessionArray);
-                    redirect('admin/dashboard');
+                                redirect('admin/dashboard');
+                       
             }
             else
             {
@@ -76,8 +77,10 @@ class Login extends CI_Controller {
 	
 	public function logout() 
 	{	
+
+	    
 		$redirecturl='admin/login';
-        $user_data = $this->session->all_userdata();
+        $user_data = $this->session->userdata($sessionArray);
         foreach ($user_data as $key => $value) {
 
             $this->session->unset_userdata($key);
@@ -85,5 +88,6 @@ class Login extends CI_Controller {
         $this->session->sess_destroy();
 		redirect($redirecturl);
 		exit;
+	
 	}
 }

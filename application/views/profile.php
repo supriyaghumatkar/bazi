@@ -1,5 +1,3 @@
-
-
 <?php  extract($userdetail); ?>
 <div class="profile-sec minheight">
 <div class="container">
@@ -19,7 +17,110 @@
 						<h3>Plot Chart</h3>
                                                 <p>Dear <?php if(!empty($userdetail)){  echo $userdetail[0]['FirstName']." ".$userdetail[0]['LastName']; } ?>, welcome to your personal dashboard.Here you can view your Plot Bazi Chart and know many other things.Keep following this page for more Future updates.</p>
                         <p><a href="<?php echo base_url(); ?>chart" name="plotchart" id="ploatchart" class="btn btn-info" >Plot Bazi<br/> Chart</a></p>
-                    </div>
+						<p><a href="<?php echo base_url(); ?>Plan" name="plotchart" id="ploatchart" class="btn btn-info" >Fengshui</a></p>
+						<!-- For Show Paid Version Packages -->
+
+						<!-- <div class="row">
+						<h2 id="details">Choose your package</h2>
+					</div><br>
+                    
+                     
+                       <!-Pack 1-->
+                        <!-- <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Basic User</h2>
+                                <div class="space"></div>
+    						</div>
+							<ul class="list-group">
+                                    
+									<li class="list-group-item"><input type="checkbox" value="10"/>Personal fengshui energy direction</li>
+									<li class="list-group-item"><input type="checkbox" value="10"/> Flystar</li>
+									<li class="list-group-item"><input type="checkbox" value="10"/>Qmdj fengshui direction</li>
+									<li class="list-group-item"><input type="checkbox" value="10"/>24 Mountain</li>
+									<li class="list-group-item"><input type="checkbox" value="10"/>House Gua</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/> Personal noble man</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/> Personal intelligence star</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/> Personal noble man</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/> Monthly star</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/>House noble man</li>
+									<li class="list-group-item off"><input type="checkbox" value="10"/>Dragon gate formation</li>
+								</ul>
+                                
+                                <div class="try">
+                                    <p class="price" id="total">$ 0</p>
+                                    <a class="btn btn-default" href="#" type="button">Buy Now</a>
+                                </div>
+                            </div> -->
+                        <!-- Pack 2-->
+                        <!-- <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Basic User</h2>
+                                <div class="space"></div>
+    						</div>
+							<ul class="list-group">
+							        <li class="list-group-item"><span class="fas fa-check"></span>Personal fengshui energy direction</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Flystar</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>Qmdj fengshui direction</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 24 Mountain</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>House Gua</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal noble man</li>
+								</ul>
+                                
+                                <div class="try">
+                                    <p class="price">$ 60</p>
+                                    <a class="btn btn-default" href="#" type="button">Buy Now</a>
+                                </div>
+                            </div> -->
+
+							<!-- Pack 3-->
+							<!-- <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Basic User</h2>
+                                <div class="space"></div>
+    						</div>
+							<ul class="list-group">
+                                    
+							        <li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal intelligence star</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal noble man</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Monthly star</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> House noble man</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Dragon gate formation</li>
+								</ul>
+                                 
+                                <div class="try">
+                                    <p class="price">$ 60</p>
+                                    <a class="btn btn-default" href="#" type="button">Buy Now</a>
+                                </div>
+                            </div> -->
+                        
+                        <!-- Pack 4-->
+                        <!-- <div class="col-md-3" id="home-box">
+                            <div class="pricing_header">
+                                <h2>Basic User</h2>
+                                <div class="space"></div>
+    						</div>
+							<ul class="list-group">
+                                    
+							        <li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>Personal fengshui energy direction</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> Flystar</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>Qmdj fengshui direction</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span> 24 Mountain</li>
+									<li class="list-group-item"><span class="glyphicon glyphicon-ok"></span>House Gua</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal noble man</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal intelligence star</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Personal noble man</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Monthly star</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> House noble man</li>
+									<li class="list-group-item off"><span class="glyphicon glyphicon-ok"></span> Dragon gate formation</li>
+								</ul>
+                                
+                                <div class="try">
+                                    <p class="price">$ 100</p>
+                                    <a class="btn btn-default" href="#" type="button">Buy Now</a>
+                                </div>
+                            </div>
+    -->
+                    </div> 
                     <div role="tabpanel" class="tab-pane fade" id="Section2">
                         <h3>Edit Profile</h3>
                         <div class="row">

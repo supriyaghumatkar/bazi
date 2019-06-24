@@ -54,8 +54,9 @@ class Chart extends CI_Controller {
 	{
 	 $this->session->set_flashdata('success',"Not a valid Session");
 	 redirect('user/logout');
-	} else{    
-          
+	} else{ 
+    if(!empty($_POST))   
+      {    
         $this->form_validation->set_rules('first_name', 'First Name', 'required');
         $this->form_validation->set_rules('last_name', 'Last Name', 'required');
         $this->form_validation->set_rules('birttdate', 'Date Of Birth', 'required');
@@ -80,6 +81,13 @@ class Chart extends CI_Controller {
             }
           }
         }
+      
+      else
+      {
+        redirect('chart');
     }
+      }
+      
    }
+}
 }

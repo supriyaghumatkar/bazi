@@ -1,4 +1,4 @@
-<?php //extract($theme_confg); ?>
+
 <!DOCTYPE html>
 <html>
 <head>

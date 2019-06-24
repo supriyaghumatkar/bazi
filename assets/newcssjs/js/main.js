@@ -106,6 +106,28 @@ $(document).ready(function () {
         }
     });
 
+    
+    $("#report-personaldetail-form").validate({
+        errorClass: "help-inline text-danger",
+        errorElement: "span",
+        rules: {
+            first_name: {required: true},
+            last_name: {required: true},
+            gender: {required: true},
+            birttdate: {required: true},
+           // birthtime: {required: true},
+        },
+        messages: {
+            first_name: {"required": "Enter first name"},
+            last_name: {"required": "Enter last name"},
+            gender: {"required": "Select gender"},
+            birttdate: {"required": "Select birth date"},
+           // birthtime: {"required": "Select birth time"},
+        }
+    });
+
+
+
     $("#chapass-form").validate({
         errorClass: "help-inline text-danger",
         errorElement: "span",
@@ -206,6 +228,21 @@ $(document).ready(function () {
             $("#checkfogemail").html("Please enter valid email");
         }
     });
+
+
+ //for profile page on checked addition of price    
+$('input:checkbox').change(function ()
+{
+  //alert("dsds");
+var total = 0;
+      $('input:checkbox:checked').each(function(){
+       total +=  isNaN(parseInt($(this).val())) ? 0 : parseInt($(this).val());
+      });   
+      $("#total").html("$ " +  total);
+});
+
+
+
 
 //END DOC READY
 });

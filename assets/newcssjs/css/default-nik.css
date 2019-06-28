@@ -1,1 +1,8 @@
 .fullscreen_bgmain{background:url(../img/plot-bazi-chart-bg.jpg) no-repeat;position: fixed;height: 100vh;width: 100%;z-index:0;background-size:cover;}
+.main-containerbox{position: relative;z-index: 9;width: 80%;margin: 0 auto;background: rgba(255, 255, 255, 0.85);padding: 5%;border: 1px solid #ccc;box-shadow: 1px 0px 7px #a80202;}
+.min-hegt{min-height: 82vh;  margin: 2% auto;}
+.fiyingstar{position: relative; z-index: 999;}
+.chakra{position: relative;}
+.lebal1{position:absolute; top:5%; left: 5%; color: #000; font-size: 14px; transform: rotate(133deg);}
+.labling{width: 100%; margin: 10px auto; text-align: center; }
+.labling p{color: #000; font-size: 18px; padding: 5px;    background: rgba(204, 204, 204, 0.22);}

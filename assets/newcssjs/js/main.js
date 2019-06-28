@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var base_url = "http://sharmilamohanan.com/bazi";
+    var base_url = "http://localhost/bazi/";
 
 //Registration validation
     $("#register-form").validate({
@@ -126,6 +126,22 @@ $(document).ready(function () {
         }
     });
 
+    $("#flyingstar").validate({
+        errorClass: "help-inline text-danger",
+        errorElement: "span",
+        rules: {
+            Year: {required: true},
+            Period: {required: true},
+            facing: {required: true},
+        },
+        messages: {
+            Year: {"required": "Select year"},
+            Period: {"required": "Select period"},
+            facing: {"required": "Select facing"},
+           // birthtime: {"required": "Select birth time"},
+        }
+    });
+
 
 
     $("#chapass-form").validate({
@@ -242,7 +258,53 @@ var total = 0;
 });
 
 
+//For flyingstar chage period on year
 
+$( "#Year" ).change(function() {
+   // alert($( "#Year" ).val());
+    var Year = $( "#Year" ).val();
+    if(Year != "") {
+        $.ajax({
+          url:base_url + "/report/select_period",
+          data:{Year:Year},
+          type:'POST',
+          success:function(response) {
+            var resp = $.trim(response);
+           // alert(resp);
+            $("#Period").html(resp);
+          }
+        });
+      } else {
+        $("#Period").html("<option value=''>------- Select Period --------</option>");
+      }
+   });
+
+
+   
+$( "#btn_flyingstar" ).click(function() {
+    
+     var Year = $( "#Year").val();
+     var Period = $( "#Period").val();
+     var facing = $( "#facing").val();
+     if(Year!="" &&  Period!="" && facing!="")
+     {
+        $("#errord").html("");
+         $.ajax({
+           url:base_url + "/report/show_flying_chart",
+           data:{Year:Year,Period:Period,facing:facing},
+           type:'POST',
+           success:function(response) {
+             var resp = $.trim(response);
+            // alert(resp);
+             $("#showchart").html(resp);
+           }
+         });
+        }
+        else{
+            $("#errord").html("Please select all field");
+        }
+       
+    });
 
 //END DOC READY
 });

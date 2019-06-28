@@ -35,7 +35,7 @@ $currentfunction=$this->router->fetch_method();
                   
 	</head>
  <body>
-     <?php if($currentfunction!='fensui_chart_personal_detail' && $currentpage!='report' ){ ?>
+     <?php if($currentfunction!='fensui_chart_personal_detail'){ ?>
     <div class="fullscreen_bgmain"></div>
      <?php } ?>
         <div class="main-header clearfix" >	

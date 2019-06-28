@@ -39,7 +39,47 @@ class Report extends REST_Controller {
           $this->response(['status' => 'success','message' => '', 'data' => array('favorable_directionval'=>$favorable_direction_detail, 'unfavorable_directionval'=>$unfavorable_direction_detail,'name'=>$name,'gender'=>$gender,'DOB'=>$birttdate,'birthtime'=>$birthtime)], REST_Controller::HTTP_OK);
           }
      
-    }   
+    }  
+    
+    
+public function flystar_report_post() {
+        $FirstName = $this->input->post('FirstName');
+        $LastName = $this->input->post('LastName');
+        $name= $FirstName ." ". $LastName;
+        $birttdate = date('Y-m-d',strtotime($this->input->post('birttdate')));
+        $birthtime = $this->input->post('birthtime');
+        $gender = $this->input->post('gender');
+        $year=date('Y',strtotime($this->input->post('birttdate')));
+ 
+          //if(is_array($favorable_direction_detail) && is_array($unfavorable_direction_detail)){
+
+          $this->response(['status' => 'success','message' => '', 'data' => array('name'=>$name,'gender'=>$gender,'DOB'=>$birttdate,'birthtime'=>$birthtime)], REST_Controller::HTTP_OK);
+          //}
+       
+     
+    }  
+
+public function show_flying_chart_post()
+{
+    $Year = $this->input->post('Year');
+    $Period = $this->input->post('Period');
+    $facing = $this->input->post('facing');
+    $flystar_chart_data=$this->flying_star_chart_get($facing,$Period);
+       
+    if(is_array($flystar_chart_data) && is_array($flystar_chart_data)){
+
+          $this->response(['status' => 'success','message' => '', 'data' =>$flystar_chart_data], REST_Controller::HTTP_OK);
+          
+        }
+    
+
+}
+
+
+
+
+
+
 
 //common function
 public function life_star_get($year, $gender) {
@@ -119,6 +159,14 @@ public function life_star_get($year, $gender) {
         $unfavorable_direction = $this->query->get_details("*",'unfavorable_direction',$where); 
         if (is_array($unfavorable_direction)) {
             return $unfavorable_direction;
+        }
+    }
+
+    public function flying_star_chart_get($facing,$period) {
+        $where = array('facing' => $facing,'period'=>$period);
+        $flying_chart = $this->query->get_details("*",'fyingstar',$where); 
+        if (is_array($flying_chart)) {
+            return $flying_chart;
         }
     }
 
